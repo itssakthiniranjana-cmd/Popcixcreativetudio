@@ -61,9 +61,9 @@ $(function () {
             }
             function updateLogo() {
                 if (isLight()) {
-                    $(".navbar .logo img, footer .logo img, .footer-logo img").attr("src", "assets/imgs/logo-dark.svg");
+                    $(".navbar .logo img, footer .logo img, .footer-logo img").attr("src", "assets/imgs/logo-dark.png?v=3");
                 } else {
-                    $(".navbar .logo img, footer .logo img, .footer-logo img").attr("src", "assets/imgs/logo-light.svg");
+                    $(".navbar .logo img, footer .logo img, .footer-logo img").attr("src", "assets/imgs/logo-light.png?v=3");
                 }
             }
 
@@ -134,9 +134,9 @@ $(function () {
             navbar.removeClass("nav-scroll");
         }
         if (typeof isLight === 'function' && isLight()) {
-            logo.attr('src', 'assets/imgs/logo-dark.svg');
+            logo.attr('src', 'assets/imgs/logo-dark.png?v=3');
         } else {
-            logo.attr('src', 'assets/imgs/logo-light.svg');
+            logo.attr('src', 'assets/imgs/logo-light.png?v=3');
         }
     });
 
