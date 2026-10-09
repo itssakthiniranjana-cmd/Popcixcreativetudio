@@ -61,9 +61,9 @@ $(function () {
             }
             function updateLogo() {
                 if (document.body.classList.contains("light") || isLight()) {
-                    $(".navbar .logo img, footer .logo img, .footer-logo img, .footer-style4 .logo img").attr("src", "assets/imgs/logo-dark.png?v=4");
+                    $(".navbar .logo img, footer .logo img, .footer-logo img, .footer-style4 .logo img").attr("src", "assets/imgs/popcix-brand-dark.png");
                 } else {
-                    $(".navbar .logo img, footer .logo img, .footer-logo img, .footer-style4 .logo img").attr("src", "assets/imgs/logo-light.png?v=4");
+                    $(".navbar .logo img, footer .logo img, .footer-logo img, .footer-style4 .logo img").attr("src", "assets/imgs/popcix-brand-light.png");
                 }
             }
 
@@ -134,9 +134,9 @@ $(function () {
             navbar.removeClass("nav-scroll");
         }
         if (document.body.classList.contains('light')) {
-            logo.attr('src', 'assets/imgs/logo-dark.png?v=4');
+            logo.attr('src', 'assets/imgs/popcix-brand-dark.png');
         } else {
-            logo.attr('src', 'assets/imgs/logo-light.png?v=4');
+            logo.attr('src', 'assets/imgs/popcix-brand-light.png');
         }
     });
 
