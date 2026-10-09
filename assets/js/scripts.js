@@ -61,9 +61,9 @@ $(function () {
             }
             function updateLogo() {
                 if (isLight()) {
-                    $(".navbar .logo img, footer .logo img").attr("src", "assets/imgs/logo-dark.svg");
+                    $(".navbar .logo img, footer .logo img, .footer-logo img").attr("src", "assets/imgs/logo-dark.svg");
                 } else {
-                    $(".navbar .logo img, footer .logo img").attr("src", "assets/imgs/logo-light.svg");
+                    $(".navbar .logo img, footer .logo img, .footer-logo img").attr("src", "assets/imgs/logo-light.svg");
                 }
             }
 
@@ -129,13 +129,13 @@ $(function () {
             logo = $(".navbar.change .logo> img");
 
         if (bodyScroll > 300) {
-
             navbar.addClass("nav-scroll");
-            logo.attr('src', 'assets/imgs/logo-light.svg');
-
         } else {
-
             navbar.removeClass("nav-scroll");
+        }
+        if (typeof isLight === 'function' && isLight()) {
+            logo.attr('src', 'assets/imgs/logo-dark.svg');
+        } else {
             logo.attr('src', 'assets/imgs/logo-light.svg');
         }
     });

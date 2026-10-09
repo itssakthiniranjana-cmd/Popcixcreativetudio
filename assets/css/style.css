@@ -12402,6 +12402,7 @@ body.light .footer-style4 .copyright a {
   color: rgba(0, 0, 0, 0.8);
 }
 body.light .footer-style4 .logo img,
+body.light .footer-logo img,
 body.light .navbar .logo img,
 body.light .logo img {
   filter: brightness(0);
