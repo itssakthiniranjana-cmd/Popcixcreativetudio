@@ -12308,47 +12308,86 @@ body.light .navbar .dropdown-menu .dropdown-item:hover {
   color: #000;
 }
 
-/* Footer Enhancements */
-.footer-style4 .logo,
-.footer-style4 .logo-wrapper {
-  max-width: 280px !important;
-  width: 100% !important;
+/* Footer Enhancements (matches screenshot) */
+.footer-style4 {
+  position: relative;
+  width: 100%;
 }
-.footer-style4 .logo img,
-.footer-style1 .f-logo img,
-.footer-style1 .logo img {
-  max-width: 280px !important;
+.footer-style4 .logo {
+  max-width: 140px !important;
+  width: 140px !important;
+}
+.footer-style4 .logo img {
+  max-width: 140px !important;
   width: 100% !important;
   height: auto !important;
+  display: block;
 }
-.footer-style1 .f-logo {
-  max-width: 280px !important;
-  width: 100% !important;
+.footer-style4 .sub-title {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 }
-.footer-style4 .eml h2,
-.footer-style4 .eml .email-title {
-  font-size: clamp(34px, 5.5vw, 76px) !important;
-  line-height: 1.1 !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.02em;
-  word-break: break-word;
+.footer-style4 .column p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  line-height: 1.6;
 }
-.footer-style4 .eml h2 a,
-.footer-style4 .eml .email-title a {
-  font-size: inherit !important;
-  font-weight: 700 !important;
+.footer-style4 .column h5 a {
+  font-size: 26px;
+  font-weight: 700;
   color: #fff;
-  transition: opacity 0.3s ease, color 0.3s ease;
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
-.footer-style4 .eml h2 a:hover,
-.footer-style4 .eml .email-title a:hover {
+.footer-style4 .column li a {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+.footer-style4 .column li a:hover {
   color: #c9f31d;
 }
-body.light .footer-style4 .eml h2 a {
+.footer-style4 .links li a {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  transition: all 0.25s ease;
+}
+.footer-style4 .links li a:hover {
+  color: #fff;
+}
+.footer-style4 .copyright p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+}
+.footer-style4 .copyright a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Light Mode Footer */
+body.light .footer-style4 .column p,
+body.light .footer-style4 .column li a,
+body.light .footer-style4 .links li a {
+  color: rgba(0, 0, 0, 0.7);
+}
+body.light .footer-style4 .sub-title {
   color: #111;
 }
-body.light .footer-style4 .eml h2 a:hover {
-  color: #666;
+body.light .footer-style4 .column h5 a {
+  color: #111;
+}
+body.light .footer-style4 .column li a:hover,
+body.light .footer-style4 .links li a:hover {
+  color: #000;
+}
+body.light .footer-style4 .copyright p {
+  color: rgba(0, 0, 0, 0.5);
+}
+body.light .footer-style4 .copyright a {
+  color: rgba(0, 0, 0, 0.8);
+}
+body.light .border-color-transparent-white-light {
+  border-color: rgba(0, 0, 0, 0.08) !important;
 }
 
 /* Header Logo Sizing */
