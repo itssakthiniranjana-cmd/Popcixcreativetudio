@@ -12307,3 +12307,46 @@ body.light .navbar .dropdown-menu .dropdown-item:hover {
   background: rgba(0, 0, 0, 0.05);
   color: #000;
 }
+
+/* Footer Enhancements */
+.footer-style4 .logo,
+.footer-style4 .logo-wrapper {
+  max-width: 280px !important;
+  width: 100% !important;
+}
+.footer-style4 .logo img,
+.footer-style1 .f-logo img,
+.footer-style1 .logo img {
+  max-width: 280px !important;
+  width: 100% !important;
+  height: auto !important;
+}
+.footer-style1 .f-logo {
+  max-width: 280px !important;
+  width: 100% !important;
+}
+.footer-style4 .eml h2,
+.footer-style4 .eml .email-title {
+  font-size: clamp(34px, 5.5vw, 76px) !important;
+  line-height: 1.1 !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.02em;
+  word-break: break-word;
+}
+.footer-style4 .eml h2 a,
+.footer-style4 .eml .email-title a {
+  font-size: inherit !important;
+  font-weight: 700 !important;
+  color: #fff;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+.footer-style4 .eml h2 a:hover,
+.footer-style4 .eml .email-title a:hover {
+  color: #c9f31d;
+}
+body.light .footer-style4 .eml h2 a {
+  color: #111;
+}
+body.light .footer-style4 .eml h2 a:hover {
+  color: #666;
+}
