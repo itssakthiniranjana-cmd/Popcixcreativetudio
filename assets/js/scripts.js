@@ -59,21 +59,25 @@ $(function () {
             } else {
                 localStorage.setItem("light-mode", "set");
             }
-            $(".navbar .logo img , footer .logo img").attr("src", "assets/imgs/logo-light.svg");
-        }
+            function updateLogo() {
+                if (isLight()) {
+                    $(".navbar .logo img, footer .logo img").attr("src", "assets/imgs/logo-dark.svg");
+                } else {
+                    $(".navbar .logo img, footer .logo img").attr("src", "assets/imgs/logo-light.svg");
+                }
+            }
 
-        if (isLight()) {
-            toggleRootClass();
-        }
+            if (isLight()) {
+                toggleRootClass();
+            }
+            updateLogo();
 
-        document.querySelector(".theme-icon").addEventListener("click", () => {
-            toggleLocalStorageItem();
-            toggleRootClass();
+            document.querySelector(".theme-icon").addEventListener("click", () => {
+                toggleLocalStorageItem();
+                toggleRootClass();
+                updateLogo();
+            });
         });
-
-        $(".navbar .logo img , footer .logo img").attr("src", "assets/imgs/logo-light.svg");
-
-    });
 
 
     /* =============================================================================
