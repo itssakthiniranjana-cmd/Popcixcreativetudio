@@ -60,10 +60,10 @@ $(function () {
                 localStorage.setItem("light-mode", "set");
             }
             function updateLogo() {
-                if (isLight()) {
-                    $(".navbar .logo img, footer .logo img, .footer-logo img").attr("src", "assets/imgs/logo-dark.png?v=3");
+                if (document.body.classList.contains("light") || isLight()) {
+                    $(".navbar .logo img, footer .logo img, .footer-logo img, .footer-style4 .logo img").attr("src", "assets/imgs/logo-dark.png?v=4");
                 } else {
-                    $(".navbar .logo img, footer .logo img, .footer-logo img").attr("src", "assets/imgs/logo-light.png?v=3");
+                    $(".navbar .logo img, footer .logo img, .footer-logo img, .footer-style4 .logo img").attr("src", "assets/imgs/logo-light.png?v=4");
                 }
             }
 
@@ -133,10 +133,10 @@ $(function () {
         } else {
             navbar.removeClass("nav-scroll");
         }
-        if (typeof isLight === 'function' && isLight()) {
-            logo.attr('src', 'assets/imgs/logo-dark.png?v=3');
+        if (document.body.classList.contains('light')) {
+            logo.attr('src', 'assets/imgs/logo-dark.png?v=4');
         } else {
-            logo.attr('src', 'assets/imgs/logo-light.png?v=3');
+            logo.attr('src', 'assets/imgs/logo-light.png?v=4');
         }
     });
 
