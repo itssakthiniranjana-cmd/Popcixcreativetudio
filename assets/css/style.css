@@ -12308,32 +12308,27 @@ body.light .navbar .dropdown-menu .dropdown-item:hover {
   color: #000;
 }
 
-/* Footer Enhancements (matches screenshot) */
+/* Footer Style 4 (from home-freelancer.html) */
 .footer-style4 {
   position: relative;
+  padding: 80px 0 0;
   width: 100%;
-  padding: 0 15px 15px;
-}
-.footer-style4 .sub-bg {
-  width: 100%;
-  background: #1C1C1C;
 }
 .footer-style4 .logo {
-  max-width: 140px !important;
-  width: 140px !important;
-  display: inline-block;
+  max-width: 140px;
+  width: 140px;
 }
 .footer-style4 .logo img {
-  max-width: 140px !important;
-  width: 100% !important;
-  height: auto !important;
+  max-width: 140px;
+  width: 100%;
+  height: auto;
   display: block;
 }
 .footer-style4 .sub-title {
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 .footer-style4 .column p {
   color: rgba(255, 255, 255, 0.7);
@@ -12354,9 +12349,9 @@ body.light .navbar .dropdown-menu .dropdown-item:hover {
 }
 .footer-style4 .column li {
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 30px;
 }
-.footer-style4 .column li:last-child {
+.footer-style4 .column li:last-of-type {
   margin-right: 0;
 }
 .footer-style4 .column li a {
@@ -12384,9 +12379,6 @@ body.light .navbar .dropdown-menu .dropdown-item:hover {
 }
 
 /* Light Mode Footer */
-body.light .footer-style4 .sub-bg {
-  background: #f7f7f7;
-}
 body.light .footer-style4 .column p,
 body.light .footer-style4 .column li a,
 body.light .footer-style4 .links li a {
@@ -12416,6 +12408,24 @@ body.light .logo img {
 }
 body.light .border-color-transparent-white-light {
   border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+@media screen and (max-width: 991px) {
+  .footer-style4 {
+    padding-top: 60px;
+  }
+  .footer-style4 .logo {
+    margin-bottom: 30px;
+  }
+  .footer-style4 .column {
+    margin-bottom: 30px;
+  }
+  .footer-style4 .copyright {
+    margin-top: 15px;
+  }
+  .footer-style4 .copyright .ml-auto {
+    margin-left: 0 !important;
+  }
 }
 
 /* Header Logo Sizing */
