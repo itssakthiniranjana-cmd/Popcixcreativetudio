@@ -12951,3 +12951,410 @@ body.light .copyright-text a {
     grid-template-columns: 1fr;
   }
 }
+
+/* =================================================================
+   Modern Bento Footer (.footer-bento-section)
+   ================================================================= */
+.footer-bento-section {
+  position: relative;
+  padding: 40px 0 60px;
+  width: 100%;
+}
+
+.footer-bento-ticker {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 0.5px;
+  padding: 0 10px;
+}
+
+.footer-bento-ticker .ticker-dot {
+  margin-right: 4px;
+}
+
+.footer-bento-ticker .ticker-center-dot {
+  font-size: 16px;
+  line-height: 1;
+  opacity: 0.8;
+}
+
+/* Bento Cards Base */
+.bento-card {
+  position: relative;
+  background: #181818;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  padding: 45px 42px 35px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  transition: all 0.35s ease;
+}
+
+/* Subtle globe/wireframe background for main card */
+.bento-card-main::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -60px;
+  width: 440px;
+  height: 440px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.035) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.card-main-top,
+.card-main-bottom,
+.bento-card-divider {
+  position: relative;
+  z-index: 1;
+}
+
+/* Left Card Elements */
+.bento-heading-wrap .sub-greeting {
+  font-size: 28px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  display: block;
+  line-height: 1.2;
+}
+
+.bento-heading-wrap .main-title {
+  font-size: clamp(30px, 4.2vw, 50px);
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  margin: 4px 0 14px;
+  line-height: 1.15;
+}
+
+.bento-email-link {
+  font-size: clamp(22px, 3.4vw, 38px);
+  font-weight: 700;
+  color: #8f7cee;
+  text-decoration: underline;
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2.5px;
+  display: inline-block;
+  transition: color 0.25s ease;
+  word-break: normal;
+}
+
+.bento-email-link:hover {
+  color: #a795e7;
+}
+
+/* Get In Touch Button */
+.bento-get-in-touch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  background: #ffffff;
+  color: #111111 !important;
+  padding: 8px 8px 8px 24px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  margin-top: 10px;
+}
+
+.bento-get-in-touch-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.2);
+}
+
+.bento-get-in-touch-btn .btn-arrow-circle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #111111;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.bento-get-in-touch-btn:hover .btn-arrow-circle {
+  transform: rotate(45deg);
+}
+
+/* Divider */
+.bento-card-divider {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 35px 0 30px;
+}
+
+/* Bottom Area */
+.bento-brand-col .bento-logo-img {
+  max-width: 160px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bento-tagline {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.55;
+  max-width: 320px;
+}
+
+/* Nav Pills */
+.bento-pill {
+  display: inline-block;
+  padding: 7px 22px;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: lowercase;
+  transition: all 0.25s ease;
+}
+
+.bento-pill:hover {
+  background: #ffffff;
+  color: #111111;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
+/* Right Card (Side) */
+.bento-card-side .social-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.social-circle-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.04);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  transition: all 0.25s ease;
+}
+
+.social-circle-btn:hover {
+  background: #8f7cee;
+  color: #ffffff;
+  border-color: #8f7cee;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(143, 124, 238, 0.35);
+}
+
+.newsletter-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.newsletter-label i {
+  font-size: 15px;
+  color: #8f7cee;
+}
+
+.bento-newsletter-input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50px;
+  padding: 14px 48px 14px 20px;
+  font-size: 13px;
+  color: #ffffff;
+  outline: none;
+  transition: border-color 0.25s ease;
+}
+
+.bento-newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.bento-newsletter-input:focus {
+  border-color: #8f7cee;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.bento-newsletter-submit {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.bento-newsletter-submit:hover {
+  color: #8f7cee;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.bento-privacy-note {
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.4;
+}
+
+.bento-privacy-note a {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.bento-privacy-note a:hover {
+  color: #8f7cee;
+}
+
+/* =================================================================
+   Light Mode Overrides for Bento Footer (Matches Mockup Exactly)
+   ================================================================= */
+body.light .footer-bento-ticker {
+  color: #444444;
+}
+
+body.light .bento-card {
+  background: #eaeaea;
+  border-color: rgba(0, 0, 0, 0.06);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.04);
+}
+
+body.light .bento-card-main::before {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
+}
+
+body.light .bento-heading-wrap .sub-greeting {
+  color: #444444;
+}
+
+body.light .bento-heading-wrap .main-title {
+  color: #111111;
+}
+
+body.light .bento-email-link {
+  color: #8f7cee;
+}
+
+body.light .bento-email-link:hover {
+  color: #725de4;
+}
+
+body.light .bento-get-in-touch-btn {
+  background: #111111;
+  color: #ffffff !important;
+}
+
+body.light .bento-get-in-touch-btn:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+body.light .bento-get-in-touch-btn .btn-arrow-circle {
+  background: #ffffff;
+  color: #111111;
+}
+
+body.light .bento-card-divider {
+  border-top-color: rgba(0, 0, 0, 0.09);
+}
+
+body.light .bento-tagline {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+body.light .bento-pill {
+  border-color: rgba(0, 0, 0, 0.18);
+  background: rgba(255, 255, 255, 0.35);
+  color: #111111;
+}
+
+body.light .bento-pill:hover {
+  background: #111111;
+  color: #ffffff;
+  border-color: #111111;
+}
+
+body.light .bento-card-side .social-title {
+  color: #111111;
+}
+
+body.light .social-circle-btn {
+  border-color: rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.5);
+  color: #111111;
+}
+
+body.light .social-circle-btn:hover {
+  background: #111111;
+  color: #ffffff;
+  border-color: #111111;
+}
+
+body.light .newsletter-label {
+  color: #111111;
+}
+
+body.light .bento-newsletter-input {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.08);
+  color: #111111;
+}
+
+body.light .bento-newsletter-input::placeholder {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+body.light .bento-newsletter-input:focus {
+  border-color: #8f7cee;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+body.light .bento-newsletter-submit {
+  color: #222222;
+}
+
+body.light .bento-privacy-note {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+body.light .bento-privacy-note a {
+  color: #111111;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 991px) {
+  .footer-bento-section {
+    padding: 30px 0 40px;
+  }
+  .bento-card {
+    padding: 35px 25px 25px;
+  }
+  .bento-nav-pills {
+    width: 100%;
+  }
+  .bento-nav-pills .pills-row {
+    justify-content: flex-start !important;
+  }
+}
