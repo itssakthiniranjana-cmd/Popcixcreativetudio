@@ -59,25 +59,30 @@ $(function () {
             } else {
                 localStorage.setItem("light-mode", "set");
             }
-            function updateLogo() {
-                if (document.body.classList.contains("light") || isLight()) {
-                    $(".navbar .logo img, footer .logo img, .footer-logo img, .footer-style4 .logo img").attr("src", "assets/imgs/popcix-brand-dark.png");
-                } else {
-                    $(".navbar .logo img, footer .logo img, .footer-logo img, .footer-style4 .logo img").attr("src", "assets/imgs/popcix-brand-light.png");
-                }
-            }
+        }
 
-            if (isLight()) {
-                toggleRootClass();
+        function updateLogo() {
+            if (document.body.classList.contains("light") || isLight()) {
+                $(".navbar .logo img").attr("src", "assets/imgs/popcix-brand-dark.png");
+            } else {
+                $(".navbar .logo img").attr("src", "assets/imgs/popcix-brand-light.png");
             }
-            updateLogo();
+        }
 
-            document.querySelector(".theme-icon").addEventListener("click", () => {
+        if (isLight()) {
+            toggleRootClass();
+        }
+        updateLogo();
+
+        var themeIcon = document.querySelector(".theme-icon");
+        if (themeIcon) {
+            themeIcon.addEventListener("click", () => {
                 toggleLocalStorageItem();
                 toggleRootClass();
                 updateLogo();
             });
-        });
+        }
+    });
 
 
     /* =============================================================================

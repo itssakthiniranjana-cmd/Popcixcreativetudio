@@ -12631,15 +12631,32 @@ body.light .border-color-transparent-white-light {
 }
 
 .footer-logo {
-  max-width: 180px;
-  width: 180px;
+  margin-bottom: 25px;
 }
 
+.footer-logo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  padding: 10px 22px;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.footer-logo-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(201, 243, 29, 0.3);
+}
+
+.footer-logo-badge img,
 .footer-logo img {
-  max-width: 180px;
+  max-width: 145px;
   width: 100%;
   height: auto;
   display: block;
+  filter: brightness(0);
 }
 
 .brand-desc {
@@ -12814,6 +12831,12 @@ body.light .email-cta-pill:hover .pill-arrow {
 
 body.light .col-title {
   color: #111111;
+}
+
+body.light .footer-logo-badge {
+  background: #f4f4f6;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
 }
 
 body.light .brand-desc,
