@@ -219,61 +219,84 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="contact mt-80px">
-                                    <form id="contact-form" class="form2" method="post" action="contact.php">
 
-                                        <div class="messages"></div>
+                                <!-- Project Inquiry Form Component -->
+                                <div class="project-inquiry-card mt-60px">
+                                    <div class="inquiry-header mb-40px">
+                                        <h2 class="inquiry-title">Tell us about your project</h2>
+                                        <p class="inquiry-subtitle">Share a few details about what you're building, what you're trying to achieve, and the support you need. The more context you provide, the better we can understand your requirements.</p>
+                                    </div>
 
-                                        <div class="controls row">
-
-                                            <div class="col-lg-6">
-                                                <div class="form-group mb-30px">
-                                                    <input id="form_name" type="text" name="name" placeholder="Name"
-                                                        required="required">
+                                    <form id="project-inquiry-form" class="inquiry-form" onsubmit="event.preventDefault(); alert('Thank you! Your project inquiry has been received. Our team will get back to you shortly.'); this.reset();">
+                                        <div class="row g-4">
+                                            <!-- Row 1: Name & Work Email -->
+                                            <div class="col-md-6">
+                                                <div class="inquiry-field-wrap">
+                                                    <label class="inquiry-label">YOUR NAME*</label>
+                                                    <input type="text" name="name" class="inquiry-input" placeholder="e.g. Your Name" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="inquiry-field-wrap">
+                                                    <label class="inquiry-label">WORK EMAIL*</label>
+                                                    <input type="email" name="email" class="inquiry-input" placeholder="you@company.com" required>
                                                 </div>
                                             </div>
 
-                                            <div class="col-lg-6">
-                                                <div class="form-group mb-30px">
-                                                    <input id="form_email" type="email" name="email" placeholder="Email"
-                                                        required="required">
+                                            <!-- Row 2: Company & Service -->
+                                            <div class="col-md-6">
+                                                <div class="inquiry-field-wrap">
+                                                    <label class="inquiry-label">COMPANY / ORGANIZATION</label>
+                                                    <input type="text" name="company" class="inquiry-input" placeholder="e.g. Company Name">
                                                 </div>
                                             </div>
-
-                                            <div class="col-12">
-                                                <div class="form-group mb-30px">
-                                                    <input id="form_subject" type="text" name="subject"
-                                                        placeholder="Subject">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-12">
-                                                <div class="form-group">
-                                                    <textarea id="form_message" name="message" placeholder="Message"
-                                                        rows="4" required="required"></textarea>
-                                                </div>
-                                                <div class="mt-30px">
-                                                    <button type="submit"
-                                                        class="butn-arrow butn-rounded main-colorbg mt-30px">
-                                                        <span class="text-uppercase fs-14 fw-500">Send a Message</span>
-                                                        <span class="arrow-icon">
-                                                            <svg viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M7 11.5H17.0635M17.0635 11.5L12.5635 7M17.0635 11.5L12.5635 16">
-                                                                </path>
-                                                            </svg>
-                                                            <svg viewBox="0 0 24 24" fill="none"
-                                                                xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M7 11.5H17.0635M17.0635 11.5L12.5635 7M17.0635 11.5L12.5635 16">
-                                                                </path>
+                                            <div class="col-md-6">
+                                                <div class="inquiry-field-wrap">
+                                                    <label class="inquiry-label">SERVICE YOU'RE INTERESTED IN</label>
+                                                    <div class="inquiry-select-wrap">
+                                                        <select name="service" class="inquiry-select">
+                                                            <option value="Digital Marketing" selected>Digital Marketing</option>
+                                                            <option value="SEO">SEO</option>
+                                                            <option value="Brand Identity & Strategy">Brand Identity & Strategy</option>
+                                                            <option value="UI/UX Design">UI/UX Design</option>
+                                                            <option value="Content Creation & Social Media">Content Creation & Social Media</option>
+                                                            <option value="Web Development">Web Development</option>
+                                                            <option value="AI Solutions & Automation">AI Solutions & Automation</option>
+                                                            <option value="Multiple Services">Multiple Services</option>
+                                                            <option value="Not Sure Yet">Not Sure Yet</option>
+                                                        </select>
+                                                        <span class="select-chevron">
+                                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                                                <polyline points="6 9 12 15 18 9"></polyline>
                                                             </svg>
                                                         </span>
-                                                    </button>
+                                                    </div>
                                                 </div>
                                             </div>
 
+                                            <!-- Row 3: Project Details & Requirements -->
+                                            <div class="col-12">
+                                                <div class="inquiry-field-wrap">
+                                                    <label class="inquiry-label">PROJECT DETAILS & REQUIREMENTS</label>
+                                                    <textarea name="message" class="inquiry-textarea" rows="4" placeholder="Tell us about your business, project goals, target audience, preferred timeline, budget range..."></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Bottom Row: Divider, Note, Button -->
+                                        <div class="inquiry-bottom-wrap mt-40px pt-30px d-flex justify-content-between align-items-center flex-wrap gap-4">
+                                            <div class="inquiry-confidentiality-note">
+                                                <span class="note-title">Confidentiality Note:</span> Your project information is treated with professional confidentiality and used only to understand and respond to your inquiry.
+                                            </div>
+                                            <button type="submit" class="inquiry-submit-btn">
+                                                <span>Submit Project Inquiry &rarr;</span>
+                                                <span class="btn-circle-arrow">
+                                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                                                        <polyline points="7 7 17 7 17 17"></polyline>
+                                                    </svg>
+                                                </span>
+                                            </button>
                                         </div>
                                     </form>
                                 </div>
