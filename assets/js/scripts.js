@@ -40,48 +40,17 @@ $(function () {
 
 
     /* =============================================================================
-    -----------------------------  Dark & Light Mode   -----------------------------
+    -----------------------------  Light Theme Permanent Lock  --------------------
     ============================================================================= */
 
     $(function () {
+        // Enforce light theme permanently
+        document.body.classList.add("light");
+        localStorage.setItem("light-mode", "set");
 
-        function isLight() {
-            return localStorage.getItem("light-mode");
-        }
-
-        function toggleRootClass() {
-            document.querySelector("body:not(.notmode)").classList.toggle("light");
-        }
-
-        function toggleLocalStorageItem() {
-            if (isLight()) {
-                localStorage.removeItem("light-mode");
-            } else {
-                localStorage.setItem("light-mode", "set");
-            }
-        }
-
-        function updateLogo() {
-            if (document.body.classList.contains("light") || isLight()) {
-                $(".navbar .logo img").attr("src", "assets/imgs/popcix-brand-dark.png");
-            } else {
-                $(".navbar .logo img").attr("src", "assets/imgs/popcix-brand-light.png");
-            }
-        }
-
-        if (isLight()) {
-            toggleRootClass();
-        }
-        updateLogo();
-
-        var themeIcon = document.querySelector(".theme-icon");
-        if (themeIcon) {
-            themeIcon.addEventListener("click", () => {
-                toggleLocalStorageItem();
-                toggleRootClass();
-                updateLogo();
-            });
-        }
+        // Keep Popcix logo white
+        $(".navbar .logo img").attr("src", "assets/imgs/popcix-brand-light.png");
+        $(".bento-brand-col .bento-logo-img").attr("src", "assets/imgs/popcix-brand-light.png");
     });
 
 
@@ -138,11 +107,7 @@ $(function () {
         } else {
             navbar.removeClass("nav-scroll");
         }
-        if (document.body.classList.contains('light')) {
-            logo.attr('src', 'assets/imgs/popcix-brand-dark.png');
-        } else {
-            logo.attr('src', 'assets/imgs/popcix-brand-light.png');
-        }
+        logo.attr('src', 'assets/imgs/popcix-brand-light.png');
     });
 
     function noScroll() {

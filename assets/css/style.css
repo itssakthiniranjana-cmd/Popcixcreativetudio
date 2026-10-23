@@ -12404,8 +12404,9 @@ body.light .footer-style4 .copyright a {
 body.light .footer-style4 .logo img,
 body.light .footer-logo img,
 body.light .navbar .logo img,
+body.light .bento-brand-col .bento-logo-img,
 body.light .logo img {
-  filter: brightness(0);
+  filter: none !important;
 }
 body.light .border-color-transparent-white-light {
   border-color: rgba(0, 0, 0, 0.08) !important;
@@ -12429,25 +12430,49 @@ body.light .border-color-transparent-white-light {
   }
 }
 
-/* Header Logo Sizing */
+/* Header Logo Sizing & Capsule Badge */
 .navbar .logo {
-  max-width: 145px !important;
-  width: 145px !important;
-  display: inline-block;
-  vertical-align: middle;
+  max-width: 155px !important;
+  width: auto !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  background: #111111;
+  padding: 8px 18px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
 .navbar .logo img {
-  max-width: 145px !important;
+  max-width: 120px !important;
   width: 100% !important;
   height: auto !important;
   display: block;
+  filter: none !important;
+}
+.navbar .logo:hover {
+  border-color: rgba(221, 241, 96, 0.5);
+  box-shadow: 0 4px 25px rgba(221, 241, 96, 0.2);
 }
 @media screen and (max-width: 991px) {
   .navbar .logo {
-    max-width: 125px !important;
-    width: 125px !important;
+    max-width: 130px !important;
+    padding: 6px 14px;
     margin-left: 15px !important;
   }
+  .navbar .logo img {
+    max-width: 95px !important;
+  }
+}
+
+/* Bento Footer Logo White */
+.bento-brand-col .bento-logo-img {
+  max-width: 160px;
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: none !important;
 }
 
 /* =================================================================
