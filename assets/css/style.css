@@ -13625,16 +13625,22 @@ body.light .work-deliverable-pill {
 
 /* ==================== Project Inquiry Form Component ==================== */
 .project-inquiry-card {
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 36px;
-  padding: 55px 60px;
-  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.04);
+  background: #eaeaea;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 30px;
+  padding: 50px 55px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.04);
   margin-bottom: 90px;
+  transition: all 0.3s ease;
+}
+
+body.light .project-inquiry-card {
+  background: #eaeaea;
+  border-color: rgba(0, 0, 0, 0.06);
 }
 
 .inquiry-title {
-  font-size: 38px;
+  font-size: 36px;
   font-weight: 700;
   color: #111111;
   letter-spacing: -0.5px;
@@ -13644,7 +13650,7 @@ body.light .work-deliverable-pill {
 .inquiry-subtitle {
   font-size: 15px;
   line-height: 1.65;
-  color: #64748b;
+  color: #585858;
   max-width: 680px;
   margin-bottom: 0;
 }
@@ -13659,20 +13665,20 @@ body.light .work-deliverable-pill {
   font-weight: 700;
   letter-spacing: 0.8px;
   text-transform: uppercase;
-  color: #64748b;
-  margin-bottom: 8px;
+  color: #585858;
+  margin-bottom: 9px;
 }
 
 .inquiry-input,
 .inquiry-select,
 .inquiry-textarea {
   width: 100%;
-  background: #f8fafc;
-  border: 1.5px solid #e2e8f0;
-  border-radius: 14px;
+  background: #ffffff;
+  border: 1.5px solid rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
   padding: 14px 20px;
   font-size: 15px;
-  color: #0f172a;
+  color: #111111;
   outline: none;
   transition: all 0.25s ease;
   font-family: inherit;
@@ -13680,16 +13686,22 @@ body.light .work-deliverable-pill {
 
 .inquiry-input::placeholder,
 .inquiry-textarea::placeholder {
-  color: #94a3b8;
+  color: #999999;
   font-weight: 400;
+}
+
+.inquiry-input:hover,
+.inquiry-select:hover,
+.inquiry-textarea:hover {
+  border-color: rgba(0, 0, 0, 0.2);
 }
 
 .inquiry-input:focus,
 .inquiry-select:focus,
 .inquiry-textarea:focus {
-  border-color: #0099ff;
+  border-color: #111111;
   background: #ffffff;
-  box-shadow: 0 0 0 4px rgba(0, 153, 255, 0.12);
+  box-shadow: 0 0 0 3px rgba(17, 16, 18, 0.08);
 }
 
 .inquiry-select-wrap {
@@ -13703,14 +13715,14 @@ body.light .work-deliverable-pill {
   -moz-appearance: none;
   cursor: pointer;
   padding-right: 45px;
-  color: #0f172a;
+  color: #111111;
 }
 
 .inquiry-select option {
   background: #ffffff;
-  color: #0f172a;
+  color: #111111;
   font-size: 15px;
-  padding: 8px 12px;
+  padding: 10px 14px;
 }
 
 .select-chevron {
@@ -13719,7 +13731,7 @@ body.light .work-deliverable-pill {
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none;
-  color: #0099ff;
+  color: #111111;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13732,49 +13744,50 @@ body.light .work-deliverable-pill {
 }
 
 .inquiry-bottom-wrap {
-  border-top: 1px solid #f1f5f9;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .inquiry-confidentiality-note {
   font-size: 12.5px;
   line-height: 1.6;
-  color: #64748b;
+  color: #585858;
   max-width: 480px;
 }
 
 .inquiry-confidentiality-note .note-title {
   font-weight: 700;
-  color: #1e293b;
+  color: #111111;
 }
 
 .inquiry-submit-btn {
-  background: #0099ff;
-  color: #ffffff;
+  background: #111111;
+  color: #ffffff !important;
   border: none;
   border-radius: 50px;
   padding: 10px 12px 10px 24px;
-  font-size: 15px;
+  font-size: 14.5px;
   font-weight: 600;
+  letter-spacing: 0.3px;
   display: inline-flex;
   align-items: center;
   gap: 16px;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 8px 24px rgba(0, 153, 255, 0.28);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
 }
 
 .inquiry-submit-btn:hover {
-  background: #0088ea;
-  box-shadow: 0 12px 30px rgba(0, 153, 255, 0.4);
+  background: #000000;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.22);
   transform: translateY(-2px);
 }
 
 .btn-circle-arrow {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   background: #ffffff;
-  color: #0099ff;
+  color: #111111;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -13787,7 +13800,7 @@ body.light .work-deliverable-pill {
 
 @media (max-width: 767px) {
   .project-inquiry-card {
-    padding: 35px 24px;
+    padding: 35px 22px;
     border-radius: 24px;
   }
   .inquiry-title {
