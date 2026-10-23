@@ -162,57 +162,23 @@
 
                 <!-- ==================== Start Header ==================== -->
 
-                <header class="pg-hero">
+                <header class="pg-hero pb-80px">
                     <div class="container">
-                        <div class="row mb-80px">
+                        <div class="row align-items-end">
                             <div class="col-lg-2">
                                 <div class="pt-15px">
                                     <span class="butn-bord-sm mb-15px">Our Works</span>
                                 </div>
                             </div>
-                            <div class="col-lg-10">
+                            <div class="col-lg-7">
                                 <div>
                                     <h1 class="fs-80">Impactful creative work crafted for visionary brands.</h1>
                                 </div>
                             </div>
-                        </div>
-                        <div class="intro-style3">
-                            <div class="row">
-                                <div class="col-lg-5">
-                                    <div
-                                        class="bg-light main-colorbg box-bgimg1 h-400px border-radius-30px o-hidden mt-30px v-align-between h-100 text-align-right">
-                                        <div>
-                                            <h2 class="fs-100 mozilla-font">8+</h2>
-                                            <p>Selected client <br> case studies</p>
-                                        </div>
-                                        <div>
-                                            <span class="butn-bord-sm mt-15px">Popcix Portfolio</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class="sub-bg box-bgimg h-400px border-radius-30px o-hidden mt-30px">
-                                        <div class="row h-100">
-                                            <div class="col-sm-6 v-align-between h-100">
-                                                <div class="user-imgs style1 mb-15px">
-                                                    <span class="fit-img">
-                                                        <img src="assets/imgs/team/1.png" alt="">
-                                                    </span>
-                                                    <span class="fit-img bg-light p-5px">
-                                                        <img src="assets/imgs/star.png" alt="">
-                                                    </span>
-                                                    <span class="fit-img">
-                                                        <img src="assets/imgs/team/3.png" alt="">
-                                                    </span>
-                                                </div>
-                                                <div>
-                                                    <h2 class="fs-100 mozilla-font">100%</h2>
-                                                    <p>Bespoke digital experiences, <br>
-                                                        branding &amp; growth strategies.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="col-lg-3">
+                                <div class="mt-30px mt-lg-0 text-lg-end">
+                                    <p class="fs-18 opacity-8 mb-20px">Explore 8 curated case studies across digital product experiences, branding, and digital growth.</p>
+                                    <span class="butn-bord-sm">Archive 2024 — 2026</span>
                                 </div>
                             </div>
                         </div>
@@ -225,10 +191,10 @@
 
                 <!-- ==================== Start Works Showcase Section ==================== -->
 
-                <section class="work-showcase-section">
+                <section class="work-showcase-section pt-0">
                     <div class="container">
 
-                        <div class="sec-head bord mb-80px">
+                        <div class="sec-head bord mb-60px">
                             <div class="row justify-content-between align-items-center">
                                 <div class="col-lg-3">
                                     <h6 class="text-uppercase">Selected Portfolio</h6>
@@ -256,8 +222,22 @@
                             </div>
                         </div>
 
+                        <!-- Category Filter Bar -->
+                        <div class="works-filter-wrap mb-60px">
+                            <div class="works-filter-pills">
+                                <button type="button" class="works-filter-btn active" data-filter="all">All Works (8)</button>
+                                <button type="button" class="works-filter-btn" data-filter="uiux">UI/UX &amp; Web (3)</button>
+                                <button type="button" class="works-filter-btn" data-filter="branding">Branding &amp; Visuals (5)</button>
+                                <button type="button" class="works-filter-btn" data-filter="campaigns">Digital Campaigns (2)</button>
+                            </div>
+                            <div class="filter-count-label d-none d-md-flex align-items-center gap-2">
+                                <span class="badge-dot-live"></span>
+                                <span class="fs-13 text-uppercase opacity-7 filter-status-text">Showing All 8 Projects</span>
+                            </div>
+                        </div>
+
                         <!-- 01 Trippin Tee -->
-                        <div id="trippin-tee" class="work-showcase-card">
+                        <div id="trippin-tee" class="work-showcase-card" data-category="branding campaigns">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 mb-40px mb-lg-0">
                                     <span class="work-showcase-badge">Project 01 / 08</span>
@@ -291,7 +271,7 @@
                         </div>
 
                         <!-- 02 Rewad (Alternating) -->
-                        <div id="rewad" class="work-showcase-card">
+                        <div id="rewad" class="work-showcase-card" data-category="uiux">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 order-lg-2 mb-40px mb-lg-0 pl-lg-40px">
                                     <span class="work-showcase-badge">Project 02 / 08</span>
@@ -325,7 +305,7 @@
                         </div>
 
                         <!-- 03 Robro System -->
-                        <div id="robro-system" class="work-showcase-card">
+                        <div id="robro-system" class="work-showcase-card" data-category="uiux branding">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 mb-40px mb-lg-0">
                                     <span class="work-showcase-badge">Project 03 / 08</span>
@@ -359,7 +339,7 @@
                         </div>
 
                         <!-- 04 Sufry Dhaleem (Alternating) -->
-                        <div id="sufry-dhaleem" class="work-showcase-card">
+                        <div id="sufry-dhaleem" class="work-showcase-card" data-category="branding">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 order-lg-2 mb-40px mb-lg-0 pl-lg-40px">
                                     <span class="work-showcase-badge">Project 04 / 08</span>
@@ -393,7 +373,7 @@
                         </div>
 
                         <!-- 05 IBLU Aircon -->
-                        <div id="iblu-aircon" class="work-showcase-card">
+                        <div id="iblu-aircon" class="work-showcase-card" data-category="campaigns">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 mb-40px mb-lg-0">
                                     <span class="work-showcase-badge">Project 05 / 08</span>
@@ -427,7 +407,7 @@
                         </div>
 
                         <!-- 06 Skornet (Alternating) -->
-                        <div id="skornet" class="work-showcase-card">
+                        <div id="skornet" class="work-showcase-card" data-category="uiux">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 order-lg-2 mb-40px mb-lg-0 pl-lg-40px">
                                     <span class="work-showcase-badge">Project 06 / 08</span>
@@ -461,7 +441,7 @@
                         </div>
 
                         <!-- 07 VaanTech -->
-                        <div id="vaantech" class="work-showcase-card">
+                        <div id="vaantech" class="work-showcase-card" data-category="branding">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 mb-40px mb-lg-0">
                                     <span class="work-showcase-badge">Project 07 / 08</span>
@@ -495,7 +475,7 @@
                         </div>
 
                         <!-- 08 SANZ (Alternating) -->
-                        <div id="sanz" class="work-showcase-card">
+                        <div id="sanz" class="work-showcase-card" data-category="branding">
                             <div class="row align-items-center">
                                 <div class="col-lg-6 order-lg-2 mb-40px mb-lg-0 pl-lg-40px">
                                     <span class="work-showcase-badge">Project 08 / 08</span>
@@ -755,6 +735,43 @@
 
     <!-- custom scripts -->
     <script src="assets/js/scripts.js"></script>
+
+    <!-- Works Category Filter Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterBtns = document.querySelectorAll(".works-filter-btn");
+            const cards = document.querySelectorAll(".work-showcase-card");
+            const statusText = document.querySelector(".filter-status-text");
+
+            filterBtns.forEach(function (btn) {
+                btn.addEventListener("click", function () {
+                    filterBtns.forEach(function (b) { b.classList.remove("active"); });
+                    this.classList.add("active");
+
+                    const filter = this.getAttribute("data-filter");
+                    let count = 0;
+
+                    cards.forEach(function (card) {
+                        const category = card.getAttribute("data-category") || "";
+                        if (filter === "all" || category.includes(filter)) {
+                            card.style.display = "";
+                            count++;
+                        } else {
+                            card.style.display = "none";
+                        }
+                    });
+
+                    if (statusText) {
+                        statusText.textContent = filter === "all" ? "Showing All 8 Projects" : ("Showing " + count + " " + (count === 1 ? "Project" : "Projects"));
+                    }
+
+                    if (typeof ScrollTrigger !== "undefined") {
+                        ScrollTrigger.refresh();
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 
