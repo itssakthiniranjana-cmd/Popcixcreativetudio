@@ -13614,3 +13614,12 @@ body.light .work-deliverable-pill {
     margin-top: 25px;
   }
 }
+
+/* Keep header in original top place - no scrolling / floating */
+.navbar,
+.navbar.nav-scroll {
+  position: absolute !important;
+  top: 0 !important;
+  transform: none !important;
+  transition: none !important;
+}

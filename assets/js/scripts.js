@@ -97,16 +97,7 @@ $(function () {
     });
 
     wind.on("scroll", function () {
-
-        var bodyScroll = wind.scrollTop(),
-            navbar = $(".navbar"),
-            logo = $(".navbar.change .logo> img");
-
-        if (bodyScroll > 300) {
-            navbar.addClass("nav-scroll");
-        } else {
-            navbar.removeClass("nav-scroll");
-        }
+        var logo = $(".navbar .logo> img");
         logo.attr('src', 'assets/imgs/popcix-brand-light.png');
     });
 
