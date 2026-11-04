@@ -10722,14 +10722,34 @@ footer .subscribe p a {
 .team-style1 .item .social-icon-circle a:hover {
   background: #fff;
 }
+.team-style1 .item .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 100%;
+  padding: 0;
+  margin-top: 15px;
+}
+.team-style1 .item .info h6 {
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0 0 6px 0;
+  text-align: left;
+  width: 100%;
+}
+.team-style1 .item .info span {
+  font-size: 13.5px;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 100%;
+}
 .team-style1 .item .info span:before {
-  content: "";
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: #fff;
-  margin-right: 10px;
+  display: none !important;
+  content: none !important;
 }
 
 .team-intro .item {
