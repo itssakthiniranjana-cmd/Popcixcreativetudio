@@ -10776,8 +10776,9 @@ footer .subscribe p a {
   text-transform: uppercase;
   opacity: 0.7;
 }
-.team-reval .item-row .social-icon {
-  text-align: right;
+.team-reval .item-row .social-icon,
+.team-style1 .item .social-icon-circle {
+  display: none !important;
 }
 .team-reval .item-row .social-icon a {
   width: 45px;
