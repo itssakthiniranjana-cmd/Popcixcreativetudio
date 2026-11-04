@@ -518,13 +518,20 @@ $(function () {
     ------------------------------  Interactive   -----------------------------
     ============================================================================= */
 
-    $('.interactive-sec .cluom').on('mouseenter click', function () {
+    $('.interactive-sec .cluom').on('mouseenter', function () {
         var tab_id = $(this).attr('data-tab');
         $('.interactive-sec .cluom').removeClass('current');
         $(this).addClass('current');
 
         $('.interactive-sec .glry-img .tab-img ').removeClass('current');
         $("#" + tab_id).addClass('current');
+    });
+
+    $('.interactive-sec .cluom').on('click', function () {
+        var targetId = $(this).attr('id');
+        if (targetId) {
+            window.location.href = 'service-details.html#' + targetId;
+        }
     });
 
 
